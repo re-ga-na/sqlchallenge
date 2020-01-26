@@ -53,7 +53,7 @@ CREATE TABLE salaries (
 
 CREATE TABLE titles (
     emp_no int,
-	title varchar(50),
+	title varchar,
 	from_date date,
 	to_date date,
 	foreign key (emp_no) references employees (emp_no)
