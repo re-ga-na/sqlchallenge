@@ -12,12 +12,12 @@ DROP TABLE salaries;
 DROP TABLE titles;
 
 CREATE TABLE departments (
-    dept_no varchar primary key,
+	dept_no varchar primary key,
 	dept_name varchar
 );
 
 CREATE TABLE employees (
-    emp_no int primary key,
+	emp_no int primary key,
 	birth_date date,
 	first_name varchar,
 	last_name varchar,
@@ -26,7 +26,7 @@ CREATE TABLE employees (
 );
 
 CREATE TABLE dept_emp (
-    emp_no int,
+	emp_no int,
 	dept_no varchar,
 	from_date date,
 	to_date date,
@@ -35,7 +35,7 @@ CREATE TABLE dept_emp (
 ); 
 
 CREATE TABLE dept_manager (
-    dept_no varchar,
+	dept_no varchar,
 	emp_no int,
 	from_date date,
 	to_date date,
@@ -44,7 +44,7 @@ CREATE TABLE dept_manager (
 );
 
 CREATE TABLE salaries (
-    emp_no int,
+	emp_no int,
 	salary int,
 	from_date date,
 	to_date date,
@@ -52,7 +52,7 @@ CREATE TABLE salaries (
 );
 
 CREATE TABLE titles (
-    emp_no int,
+	emp_no int,
 	title varchar,
 	from_date date,
 	to_date date,
